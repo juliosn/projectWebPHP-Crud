@@ -33,7 +33,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.php">Cadastro</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Cadastro</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="consulta.php">Consulta</a>
@@ -54,16 +54,24 @@
                 </nav>    
             </div>
         </div>
+
+        
+        <div class="row">
+                <div class="col">
+                    &nbsp;
+        </div>
+
+
         <div class="row">
             <div class="col">
 				<form class="row g-3" method="post" action="controller/ControllerCadastro.php?funcao=cadastro" id="form" name="form">
 					<div class="col-md-6">
 						<label for="inputEmail4" class="form-label">Email</label>
-						<input type="email" class="form-control" id="txtEmail" name="txtEmail">
+						<input type="email" class="form-control" require id="txtEmail" name="txtEmail">
 					</div>
 					<div class="col-md-6">
 						<label for="inputPassword4" class="form-label">Senha</label>
-						<input type="password" class="form-control" id="txtSenha" name="txtSenha">
+						<input type="password" class="form-control" require id="txtSenha" name="txtSenha">
 					</div>
 					<div class="col-12">
 						<label for="inputAddress" class="form-label">Endereço</label>
@@ -75,7 +83,7 @@
 					</div>
 					<div class="col-md-6">
 						<label for="inputAddress3" class="form-label">Cep</label>
-						<input type="text" class="form-control" id="txtCep" name="txtCep">
+						<input type="text" class="form-control" required id="txtCep" name="txtCep">
 					</div>
 					<div class="col-md-6">
 						<label for="inputCity" class="form-label">Cidade</label>

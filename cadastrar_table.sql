@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15-Set-2022 às 19:30
--- Versão do servidor: 10.4.22-MariaDB
--- versão do PHP: 8.1.2
+-- Tempo de geração: 31-Out-2022 às 02:52
+-- Versão do servidor: 10.4.24-MariaDB
+-- versão do PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,7 +45,11 @@ CREATE TABLE `cadastrar_table` (
 INSERT INTO `cadastrar_table` (`id`, `email`, `senha`, `endereco`, `bairro`, `cep`, `cidade`, `estado`) VALUES
 (1, 'semen@oficial.com', 'semen', 'semen', 'semen', 'semen', 'semen', 'AM'),
 (2, 'semen@oficial.com.br', 'negrotezl', 'casa do negrote zl', 'jd negrote zl ', 'semen', 'cidade do negrote zl', 'SP'),
-(3, 'carlos.fofo@hotmail.com', 'fofocarlos', 'rua porra', 'jd porra', 'leitada no', 'cidade do negrote zl p2', 'AC');
+(3, 'carlos.fofo@hotmail.com', 'fofocarlos', 'rua porra', 'jd porra', 'leitada no', 'cidade do negrote zl p2', 'AC'),
+(4, 'tata@gmail.com', 'das51s6a5d', 'Casa do caralho', 'Não', '1516156106', 'asdasdwass', 'AM'),
+(5, 'julaino@etec.sp.gov.br', '123', 'Casa do baralho', 'Não sei ', '1523', 'asdasdwassa', 'ES'),
+(6, 'julio.neves@fodase.com', 'sexo anala', 'fadfas', 'fasasf', '1819632103', 'asdsad', 'MG'),
+(7, 'legal@legal.com', 'legal', 'legal', 'legal', 'legalegal', 'legal', 'MG');
 
 --
 -- Índices para tabelas despejadas
@@ -65,7 +69,7 @@ ALTER TABLE `cadastrar_table`
 -- AUTO_INCREMENT de tabela `cadastrar_table`
 --
 ALTER TABLE `cadastrar_table`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

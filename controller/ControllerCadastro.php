@@ -1,6 +1,6 @@
 <?php
 $root = realpath($_SERVER["DOCUMENT_ROOT"]);
-require_once("../model/cadastro.php");
+require_once("$root/cadastroPHP/model/cadastro.php");
 
 class ControllerCadastro{
 
@@ -37,6 +37,9 @@ class ControllerCadastro{
         }else{
             echo "<script>alert('Erro ao gravar registro!');</script>";
         }
+    }
+    public function listar (){
+        return $result = $this->cadastro->listar();
     }
 }
 new ControllerCadastro();

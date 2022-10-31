@@ -39,5 +39,24 @@ class Banco{
             return false;
         }
     }
+
+    public function getAgendamentos(){
+        try{
+            $stmt = $this->mysqli->query("SELECT * FROM cadastrar_table;");
+            $lista = $stmt->fetch_all(MYSQLI_ASSOC);
+            $f_lista = array();
+            $i = 0;
+            foreach ($lista as $l){
+                $f_lista[$i]['email'] = $l['email'];
+                $f_lista[$i]['endereco'] = $l['endereco'];
+                $f_lista[$i]['cep'] = $l['cep'];
+                $f_lista[$i]['cidade'] = $l['cidade'];
+                $i++;
+            }
+            return $f_lista;
+        } catch(Exception $e) {
+            echo "Ocorreu um erro ao tentar Buscar Todos." .$e;
+        }
+    }
 }    
 ?>

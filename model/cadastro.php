@@ -77,7 +77,18 @@ class Cadastro extends Banco {
     public function incluir(){
         return $this->setAgendamentos($this->getEmail(),$this->getSenha(),$this->getEndereco(),$this->getBairro(),$this->getCep(),$this->getCidade(),$this->getEstado());
     }
+    
+    public function listar(){
+    	return $this->getAgendamentos();
+    }
 
+    public function editar(){
+        return $this->updateAgendamentos($this->getEmail(),$this->getSenha(),$this->getEndereco(),$this->getBairro(),$this->getCep(), $this->getCidade(), $this->getEstado());
+    }
+
+    public function excluir($id){
+        return $this->deleteAgendamentos($id);
+    }
 
 }
 ?>
